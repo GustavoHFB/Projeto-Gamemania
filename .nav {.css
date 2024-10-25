@@ -1,0 +1,131 @@
+.nav {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: auto;
+    height: 90px;
+    margin: 10px 10px;
+}
+
+.hamburg {
+    display: flex;
+    align-items: center;
+    margin-left: -80px;
+}
+
+.hamburg input[type="checkbox"] {
+    display: none; 
+}
+
+.menu-label {
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 9px; 
+}
+
+.hamburguer {
+    display: block;
+    width: 50px; 
+    height: 10px; 
+    background-color: white; 
+    border-radius: 2px; 
+    transition: all 0.3s ease; 
+}
+
+#menu-hamburguer:checked + .menu-label .menu .hamburguer:nth-child(1) {
+    transform: rotate(90deg) translate(5px, 5px); 
+    /* background-color: blue; */
+}
+
+#menu-hamburguer:checked + .menu-label .menu .hamburguer:nth-child(2) {
+    opacity: 0; 
+}
+
+#menu-hamburguer:checked + .menu-label .menu .hamburguer:nth-child(3) {
+    transform: rotate(-90deg) translate(5px, -5px); 
+    /* background-color: blue; */
+}
+
+.icone {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    box-sizing: border-box;
+    
+}
+
+.icone div {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    
+}
+
+.icone img {
+    height: 30px;
+    width: auto;
+}
+
+.perfil img {
+    height: 50px;
+    width: auto;
+}
+
+.carrinho img{
+    height: 50px;
+    width: auto;
+}
+
+.pesquisar {
+    width: 700px;
+}
+
+.pesquisar input {
+    width: 100%;
+    padding: 10px; 
+    border: 1px solid white; 
+    border-radius: 50px; 
+    background-color: white; 
+    color: black; 
+}
+
+.carrossel {
+    width: 500%;
+    height: 50rem;
+    position: relative;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carrossel img {
+    width: 50%;
+    height: 50%;
+    position: sticky;
+    left: 300px;
+    flex-shrink: 0;
+    object-fit: cover;
+    scroll-behavior: smooth;
+ }
+
+.recomendacao {
+    position: relative;
+    left: 34%;
+}
+
+.caixaproduto {
+    background-color: blue;
+    display: flex;
+    justify-content: left;
+    padding: 5px 10px;
+}
