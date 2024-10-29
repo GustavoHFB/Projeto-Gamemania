@@ -1,5 +1,5 @@
 .caixaImagem {
-    width: 200px;
+    width: 250px;
     height: auto;
     margin-top: 100px;
     padding: 10px;
@@ -10,5 +10,5 @@
     justify-content:right;
     align-items: center;
     background-color: #f9f9f9;
-    text-align: -webkit-auto;
+
 }
