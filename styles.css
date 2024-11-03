@@ -100,9 +100,9 @@
 }
 
 .carrossel {
-    width: 500%;
+    width: 110%;
     height: 50rem;
-    position: relative;
+    position: center;
     display: flex;
     overflow: auto;
     scroll-snap-type: x mandatory;
@@ -111,16 +111,16 @@
 .carrossel img {
     width: 50%;
     height: 50%;
-    position: sticky;
-    left: 300px;
-    flex-shrink: 0;
+    position: relative;
+    left: 21%;
+    flex-shrink: 100%;
     object-fit: cover;
     scroll-behavior: smooth;
  }
 
 .recomendacao {
     position: relative;
-    left: 34%;
+    left: 28%;
 }
 
 .caixaproduto {
