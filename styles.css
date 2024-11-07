@@ -8,6 +8,7 @@
 .logo img {
     width: auto;
     height: 90px;   
+    height: 90px;
     margin: 10px 10px;
 }
 
@@ -15,6 +16,7 @@
     display: flex;
     align-items: center;
     margin-left: -40px;
+    margin-left: -50px;
 }
 
 .hamburg input[type="checkbox"] {
@@ -81,18 +83,22 @@
     width: auto;
 }
 
+
 .perfil {
     color: black    ;
 }
+
 
 .carrinho img{
     height: 50px;
     width: auto;
 }
 
+
 .carrinho {
     color: rgb(0, 0, 0);
 }
+
 
 .pesquisar {
     width: 700px;
@@ -106,6 +112,26 @@
     background-color: white; 
     color: black; 
 }
+
+.carrossel {
+    width: 110%;
+    height: 50rem;
+    position: center;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carrossel img {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 21%;
+    flex-shrink: 100%;
+    object-fit: cover;
+    scroll-behavior: smooth;
+ }
+
 
 .recomendacao {
     position: relative;
@@ -216,3 +242,4 @@
     opacity: 1;
     position: relative;
     }
+
