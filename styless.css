@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0400d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.login-container {
+    background-color: #0066ff;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 900px;
+    max-width: 100%;
+}
+
+.login-left {
+    background-color: #0066ff;
+    padding: 40px;
+    width: 50%;
+}
+
+.login-left img {
+    max-width: 100%;
+}
+
+.login-right {
+    width: 50%;
+    padding: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #fff;
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+.login-btn {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password {
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.signup {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+.remember-me {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input {
+    margin-right: 8px;
+}
+
+p {
+    color: #fff;
+}
+.signup a:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        width: 100%; /* Ajusta a largura para o tamanho da tela */
+        max-width: 600px; /* Define um limite para o container */
+    }
+
+    .login-left, .login-right {
+        width: 100%;
+        padding: 20px; /* Reduz o padding para caber melhor em telas menores */
+        text-align: center; /* Centraliza o conteúdo no modo de coluna única */
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Reduz o padding geral */
+    }
+
+    .login-container {
+        max-width: 100%; /* Usa toda a largura disponível na tela */
+    }
+
+    .login-left, .login-right {
+        padding: 15px; /* Reduz ainda mais o padding */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Ajusta o tamanho da fonte do título */
+    }
+
+    label {
+        font-size: 13px; /* Ajusta o tamanho das labels */
+    }
+
+    input, .login-btn {
+        padding: 10px; /* Reduz o padding dos campos de input e botão */
+        font-size: 15px; /* Ajusta o tamanho da fonte */
+    }
+
+    .signup {
+        font-size: 13px; /* Ajusta o tamanho do texto de cadastro */
+    }
+}
