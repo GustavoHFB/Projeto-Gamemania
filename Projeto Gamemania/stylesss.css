@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0400d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.register-container {
+    background-color: #0066ff;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 900px;
+    max-width: 100%;
+}
+
+.left {
+    background-color: #0066ff;
+    padding: 40px;
+    width: 50%;
+}
+
+.left img{
+    width: 100%;
+}
+
+.right {
+    width: 50%;
+    padding: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #fff;
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    font-size: 16px;
+}
+
+.register-btn {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: #0056b3;
+    transition: 0.5s;
+}
+
+p {
+    color: #fff;
+    margin-top: 15px;
+}
+a {
+    color: #fff;
+}
+a:hover {
+    color: #0056b3;
+    transition: 0.5s;
+} 
+
+@media (max-width: 768px) {
+    .register-container {
+        flex-direction: column;
+        width: 100%;
+        max-width: 600px; /* Limite de largura para o container em tablets */
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 20px; /* Reduz o padding para caber melhor em telas menores */
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Reduz o padding geral */
+    }
+
+    .register-container {
+        max-width: 100%;
+    }
+
+    .left, .right {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input, .register-btn {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+}
